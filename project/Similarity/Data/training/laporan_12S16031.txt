@@ -1,0 +1,43 @@
+LAPORAN PRAKTIKUM ARTIFICIAL INTELIGENCE Praktikum 1 
+ 
+  
+ 
+ 	 	 	Disusun oleh : 
+ 	 	 	 	Nama : Yolanda S.Nainggolan 
+ 	 	 	 	NIM    : 12S16031 
+ 	 	 	 	Prodi  : Sistem informasi 2016 
+ 
+ 
+Institut Teknologi Del 
+2018-2019 
+ 	 	 	 
+   
+1. Pada jalur tree dibawah ini dapat dilakukan pencarian menggunakan algoritma BFS, DFS dan UCS. Adapun jalur tree antara lain : 
+  
+-	Algoritma BFS : 
+ 
+  
+ 
+ 
+ 
+Dengan hasil  : 
+ 
+  
+Dengan menggunakan algoritma ini dapat diketahui bahwa BFS mengecek goals level per level. 
+ 
+-	Algoritma DFS 
+ 
+ 
+Dengan hasil : 
+ 
+  
+Maka dapat disimpulkan bahwa DFS mengecek goal langsung leave per leave. - Algoritma UCS 
+ 
+ 
+A. graph.py 
+
+  
+ 
+ 
+ 
+ 

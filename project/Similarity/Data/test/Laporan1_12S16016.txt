@@ -1,0 +1,164 @@
+Praktikum 1 Kecerdasan Buatan 
+ 
+Created By: 
+ 
+ 
+MARCELINO SOFIAN C SIRAIT 
+ 	 
+ 
+  	For 	 
+ 
+Subject 	: 	ISS3102 – Kecerdasan Buatan 
+Lecturer 	: 	Samuel Indra Gunawan Situmeang 
+Academic Year 	: 	2017/2018 
+Deadline 	: 	26th of September 2018 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Fakultas Teknik Informatika dan Elektro S1 Sistem Informasi 2017/2018 
+ 
+ 
+ 
+ 
+ 
+Tugas 1 
+A. Algoritma Breadth-First Seacrh 
+ 
+1. def dfs(g, awal, cos=[]): 2.   node=[awal] 
+3.	while node: 
+4.	v = node.pop(0) 
+5.	if  v not  in cos: 
+6.	cos = cos+ [v] 
+7.	node=   g[v] + node  8.   return cos 
+9.    
+10.	graph ={            "Arad" : ["Sibiu", "Timisoara", "Zerind"], 
+11.	"Sibiu" : ["Faragas", "Rimincu", "Oradea"], 
+12.	"Zerind" : ["Oradea"], 
+13.	"Oradea" : [], 
+14.	"Timisoara" : ["Lugoj"], 
+15.	"Lugoj" : ["Mehadia"], 
+16.	"Mehadia" : ["Drobeta"], 
+17.	"Drobeta" : ["Craiova"], 
+18.	"Rimincu" : ["Craiova", "Pitesti"], 
+19.	"Craiova" : ["Pitesti"], 
+20.	"Faragas" : ["Bucharest"], 
+21.	"Pitesti" : ["Bucharest"], 
+22.	"Bucharest" : ["Urziceni", "Giurgiu",], 
+23.	"Urziceni" : ["Hirsova", "Vaslui"], 
+24.	"Giurgiu" : [], 
+25.	"Hirsova" : ["Eforie"], 
+26.	"Eforie" : [], 
+27.	"Vaslui" : ["Iasi"], 
+28.	"Iasi" : ["Neamt"], 
+29.	"Neamt" : [] 
+30.                      
+31.                 } 
+32.  
+33. print ('Alur dfs adalah: ', dfs(graph, "Arad")) 
+Dengan menggunakan algoritma diatas maka output yang dihasilkan adalah  
+   
+B. Depth-First Search def dfs(g, awal, cos=[]): 
+  node=[awal]   while node: 
+    v = node.pop(0)     if v not in cos:       cos = cos+ [v]       node=   g[v] + node   return cos 
+   
+graph ={            "Arad" : ["Sibiu", "Timisoara", "Zerind"], 
+                    "Sibiu" : ["Faragas", "Rimincu", "Oradea"], 
+                    "Zerind" : ["Oradea"], 
+                    "Oradea" : [], 
+                    "Timisoara" : ["Lugoj"], 
+                    "Lugoj" : ["Mehadia"], 
+                    "Mehadia" : ["Drobeta"], 
+                    "Drobeta" : ["Craiova"], 
+                    "Rimincu" : ["Craiova", "Pitesti"], 
+                    "Craiova" : ["Pitesti"], 
+                    "Faragas" : ["Bucharest"], 
+                    "Pitesti" : ["Bucharest"], 
+                    "Bucharest" : ["Urziceni", "Giurgiu",], 
+                    "Urziceni" : ["Hirsova", "Vaslui"], 
+                    "Giurgiu" : [], 
+                    "Hirsova" : ["Eforie"], 
+                    "Eforie" : [], 
+                    "Vaslui" : ["Iasi"], 
+                    "Iasi" : ["Neamt"], 
+                    "Neamt" : [] 
+                     
+                } 
+ 
+print ('Alur dfs adalah: ', dfs(graph, "Arad")) 
+ 
+Adapun yang menjadi outputnya adalah   
+ 	 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Tugas 2 
+ 
+  
+a. Goal statenya 11 maka jika kita menggunakan algoritma  BFS akan menghasilkan : 
+jalur={1:set([2,3]),       2:set([4,5]), 
+      3:set([6,7]), 
+      4:set([8,9]), 
+      5:set([10,11]), 
+      6:set([12,13]), 
+      7:set([14,15])} 
+ 
+def bfs(graf,start,goals): 
+   start = [[start]]    visited = set()     while start: 
+      peta = start.pop(0)       state = peta[-1]       if state == goals :               return peta       elif state not in visited : 
+                  for branch in graf.get(state,[]): 
+                      new_path = list(jalur) 
+                      new_path.append(branch)                       start.append(new_path) 
+                      visited.add(state) 
+print("Menggunakan metode BFS :") 
+print ("Node yang dilalui oleh 1 ke 11 : " )                     list(bfs(jalur,1,11))     print(list(bfs(jalur,1,11))) 
+ 
+print ("Node yang dilalui oleh 1 ke 14 : " )                     list(bfs(jalur,1,14))     print(list(bfs(jalur,1,14))) print ("") 
+ 
+adapun outputnya adalah : 
+  
+ 
+ 
+ 
+ 
+ 
+b. Jika menggunakan algoritma DFS maka  jalur={1:set([2,3]),       2:set([4,5]), 
+      3:set([6,7]), 
+      4:set([8,9]), 
+      5:set([10,11]), 
+      6:set([12,13]), 
+      7:set([14,15])} 
+ 
+def dfs (graf,start,goals): 
+    start=[[start]] 
+    visited=set() 
+     
+    while start : 
+        length_of_path=len(start)-1         path=start.pop(length_of_path) 
+        state=path[-1] 
+         
+        if state == goals:             return path         elif state not in visited :             for branch in graf.get(state,[]):                 new_path=list(path)                 new_path.append(branch) 
+                start.append(new_path) 
+                 
+                visited.add(state) 
+                 
+                content=len (start)                 if content == 0 : 
+                    print("Tidak ditemukan ") print("Menggunakan metode DFS :") 
+print ("Node yang dilalui oleh 1 ke 11 : " )                     list(dfs(jalur,1,11))     
+print(list(dfs(jalur,1,11))) 
+ 
+ 
+print ("Node yang dilalui oleh 1 ke 14 : " )                     list(dfs(jalur,1,14))     print(list(dfs(jalur,1,14))) print ("") 
+ 
+Maka outputnya adalah 
+ 
+ 

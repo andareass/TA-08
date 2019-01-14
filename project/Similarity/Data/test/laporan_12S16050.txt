@@ -1,0 +1,54 @@
+Praktikum 1 
+NIM  	: 12S16050 
+Nama 	: Reinheart Christian Simanungkalit 	 
+ 
+ 
+Laporan Praktikum 
+ 
+Latihan 3 
+  
+Setelah kita menyertakan paket library ke dalam program serta dijalankan, muncul hasil run file seperti gambar di bawah ini. 
+  Selanjutnya, kita mendefinisikan persoalan. Persoalan adalah memulai penelusuran dari Arad dan mencoba menemukan Bucharest dalam romania_map. 
+   
+Setelah melakukan “run file” pada program diatas, maka muncul hasil seperti pada gambar dibawah ini. 
+  
+ 
+Latihan 4 
+Kita menggunakan algoritma Depth-first Search untuk graph dari Arad ke Bucharest pada romania_map. 
+  
+ 
+ 
+Setelah program tersebut dijalankan, maka muncul hasil seperti gambar dibawah. 
+  
+Hasil yang ditampilkan adalah graph dengan start dari Arad menuju tujuan Bucharest dengan metode DFS. 
+ 
+ 
+Latihan 5 
+Pada latihan ini, kita menggunakan algoritma Breadth-first Search untuk graph dari Arad ke Bucharest di romania_map. 
+  
+Setelah program tersebut dijalankan, maka muncul hasil seperti gambar dibawah. 
+  
+Hasil yang ditampilkan adalah graph dengan start dari Arad menuju tujuan Bucharest dengan metode BFS. 
+ 
+Latihan 6 | UCS Implementation using AIMA Python 
+Pada latihan ini, kita menggunakan algoritma Uniform Cost Search untuk graph dari Arad ke Bucharest di romania_map. 
+ 
+  
+Setelah program tersebut di “run”, maka muncul hasil seperti gambar dibawah. 
+  
+Hasil yang ditampilkan adalah graph dengan start dari Arad menuju goalnya Bucharest dengan metode UFS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TUGAS PRAKTIKUM 
+BFS untuk state space Gambar 2. 
+  
+DFS untuk state space Gambar 2.
+  
+UCS untuk state space Gambar 2. 
+  

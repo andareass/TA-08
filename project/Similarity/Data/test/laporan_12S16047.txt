@@ -1,0 +1,28 @@
+Nama : Tessalonika Maretta Manurung 
+NIM    :  12S16047 
+Praktikum : 1 
+LAPORAN 
+ 	Pada praktikum  pertama  Artificial Intelligent ada 2 metode  pencarian  yaitu :  informed search dan uninformed search.  Uninformed search adalah metode dimana teknik pencarian tanpa mengetahui domain knowledge seperti bobot dan informasi, sedangkan Informed search adalah teknik pencarian dengan membutuhkan informasi atau domain knowledge. 
+Ada 3 teknik pencarian pada Uninformed Search : 
+1.	DFS (Depth First Search) 
+Metode ini merupakan metode yang akan mencari node berdasarkan kedalaman yaitu  pencarian akan dilakukan pada semua anaknya sebelum dilakukan pencarian ke node-node yang berada pada level sama.  Berikut code untuk pencarian menggunakan teknik DFS : 
+  
+Dari output yang tertera yaitu [1, 2, 5, 11] dan [1, 3, 7, 14] dapat lihat pada gambar di modul  praktikum bahwa node node tersebut benar ketika dilalui apabila node start dari 1, goal 11 dan start 1, goal 14. 
+Output dari program diatas sebagai berikut: 
+  
+2.	BFS (Breath First Search) 
+ 	Metode ini merupakan  metode yang akan mencek setiap level agar sampai pada goal state atau tujuan.  BFS akan melakukan pencarian setiap simpul dalam setiap level secara berurutan dari kiri ke kanan, BFS akan terus mencek perlevel sampai menemukan solusi dari pencaraian Dalam praktikum ini, saya akan mem-print  (graph, 1, 11) : start dari node 1 dan goal state node 11. code untuk pencarian menggunakan teknik DFS : 
+  
+ 
+ 
+ 
+ 
+Output dari program diatas sebagai berikut: 
+  
+3.	UCS (Uniform Cost Search) 
+ 	UCS merupakan metode yang memperhatikan cost ataupun jarak dari node 1 ke node yang lain. UCS akan telebih dahulu mengeksplorasi node yang memiliki cost lebih rendah. Code program dari UCS yang saya buat dalam praktikum ini yaitu:  
+  
+  
+  
+Outputnya adalah : 
+    

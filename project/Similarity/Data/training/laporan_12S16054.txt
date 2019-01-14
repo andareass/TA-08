@@ -1,0 +1,51 @@
+Ket 	 	: Praktikum 1 	
+NIM  	: 12S16054 	
+Nama 	: Frans Daniel Yehuda Sitohang 	 
+ 
+ 
+HASIL PRAKTIKUM 
+ 
+ 
+Setelah kita menyertakan paket library kedalam program dan program di “run”, akan muncul 
+ 
+adalah, kita akan mulai penelusuran dari Arad dan mencoba menemukan Bucharest dalam Setelah kita melakukan “run file” pada program diatas, maka akan muncul hasil seperti pada gambar dibawah ini. 
+ 
+ 
+Pada latihan ini, kita akan menggunakan algoritma Depth-first Search untuk graph dari Arad ke Bucharest di romania_map. 
+ 
+Setelah program tersebut di “run”, maka akan muncul hasil seperti gambar dibawah. 
+ 
+metode DFS. 
+ 
+ 
+Latihan 5 | BFS Implementation using AIMA Python 
+ 
+Pada latihan ini, kita akan menggunakan algoritma Breadth-first Search untuk graph dari Arad ke Bucharest di romania_map. 
+ 
+  
+Setelah program tersebut di “run”, maka akan muncul hasil seperti gambar dibawah. 
+ 
+  
+Hasil yang ditampilkan adalah graph dengan start dari Arad menuju goalnya Bucharest dengan metode BFS. 
+ 
+Latihan 6 | UCS Implementation using AIMA Python 
+Pada latihan ini, kita akan menggunakan algoritma Uniform Cost Search untuk graph dari Arad ke Bucharest di romania_map. 
+ 
+  
+Setelah program tersebut di “run”, maka akan muncul hasil seperti gambar dibawah. 
+  
+Hasil yang ditampilkan adalah graph dengan start dari Arad menuju goalnya Bucharest dengan metode UFS. 
+ 
+TUGAS PRAKTIKUM 
+ 
+ 
+BFS untuk state space Gambar 2. 
+ 
+ 	 
+ 
+ 
+DFS untuk state space Gambar 2 
+  
+UCS untuk state space Gambar 2 
+ 
+  

@@ -1,0 +1,51 @@
+Praktiku 12S16020 
+Andreas S Situmorang 
+ 
+Goal statenya adalah   
+a.11 
+b.14 
+ 
+BFS path 
+1 	2 	3 	4 	5 	6 	7 	8 	9 	10 	11 
+ 
+neighbour 
+2 	3 	4 	5 	8 	9 	 	10 	11 	12 	13 	14 	15 	 
+ 
+BFS 
+path 
+1 	2  	3  	4  	5  	6  	7  	8  		9  		10  		11  		12  	13  
+ 
+neighbour  						
+2 	3  	4  	5  	8  	9  	 	10  	11  	12  	13  		14  		15  	 
+ 
+ 
+ 
+ 
+DFS node 
+1 	2 	8 	9 	5 	10 	11 	 	 	 
+    
+neighbour 
+2 	4 	 	 	 	 	 	 	 	 	 
+ 
+ 
+node 
+1 	2 	8 	9 	5 	3 	6 	12 	13 	7 	14 
+    
+neighbour 
+2 	4 	6 	12 	 	 	 	 	 	 	 
+ 
+ 
+UCS node 
+1 	2 	3 	4 	5 	6 	7 	8 	9 	10 	11 
+    
+neighbour 
+ 
+2 	3 	4 	5 	8 	9 	10 	11 	 	 	 
+ 
+ 
+node 
+1 	2 	3 	4 	5 	6 	7 	8 	9 	10 	11 	13 	14 
+    
+neighbour 
+2 	3 	4 	5 	8 	9 	10 	11 	 	 	 
+ 

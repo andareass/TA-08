@@ -1,0 +1,22 @@
+Praktikum 1 AI 
+Nama : Prima Hutapea 
+NIM 	: 12S16036 	 
+ 
+Tujuan 
+Mahasiswa dapat mengimplementasikan dan membandingkan Depth-First-Search,Breadth-FirstSearch,dan Uniform-Cost-Search secara programatik. 	 
+ 
+Pendahuluan 
+Secara keseluruhan, pencaharian graf dapat dibagi menjadi 2 kategori yaitu uninformed search dan informed search. Uninformed search adalah  teknik pencarian yang tidak menggunakan informasi sebelumnya(prior information) atau aturan untuk mengeleminasi beberapa jalur (paths). Teknik ini memeriksa semua jalur yang memungkinkan dan memilih yang paling optimal. Informed search atau heuristic search menggunakan informasi sebelumnya(prior information) atau  aturan untuk mengeleminasi jalur-jalur yang tidak diperlukan. 
+Teknik uninformed search tidak mempertimbangkan tujuan. Teknik ini tidak benar benar tahu kemana ia akan pergi sampai tersandung pada tujuan. Dalam informed search, kita menggunakan heuristic untuk membimbing pencarian. Sebagai contoh, pada setiap simpul, kiata dapat mendefenisikan fungsi heuristic yang mengembalikann suatu source yang mempresentasikan perkiraan path cost mulai dari simpul awal ketujuan. Dengan mendefenisikan fungsi heuristicnya,kita menginformasikan teknik pencarian mengenai arah  yang benar untuk mencapai tujuan. Ini akan memungkinkan algoritma untuk mengidentifikasi tetangga mana yang akan menuntun ketujuan. 
+Perlu dipahami bahwa heuristic search tidak akan selalu menemukan solusi yang paling optimal karena kita tidak melakukan eksplorasi semua kemungkinan dan kita bergantung pada suatu heuristic. Akan tetapi, ada suatu jaminan bahwa teknik ini akan mendapatkan dan membrikan solusi yang baik dalam waktu yang reasonable, yang mana kita membutuhkan dalam solusi praktikal. Dalam dunia nyata, kita membutuhkan solusi yang cepat. 
+Dalam praktikum ini,kita akan menerapkan beberapa strategi pencarian uninformed search: 
+1.	Depth first search(DFS) 
+2.	Breadth First Search(BFS) 
+3.	Uniform Cost Search(UCS) 
+BFS 
+  
+DFS 
+  
+Ucs 
+  
+ 

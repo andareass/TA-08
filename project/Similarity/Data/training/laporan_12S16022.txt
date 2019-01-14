@@ -1,0 +1,23 @@
+Praktikum 1 
+12S16022 
+Rosa Afresia Siagian 
+ 
+  
+Gambar 1. The State Space. 
+Dari gambar di atas kita diminta untuk membuat algoritma DFS, BFS dan UCS dengan inisial state 1 dan goal statenya: 11, 14. 
+Adapun source code dari masing-masing algoritma terlampir dibawah ini: 1. BFS 
+  
+Gambar 2. Source Code BFS 
+ 
+  
+Gambar 3.Output BFS 
+2.	DFS 
+  
+Gambar 4. Source Code DFS 
+ 
+  
+Gambar 5. Output DFS 
+ 
+3.	UCS 
+Pada bagian ini, algoritma ini tidak berlaku karena tidak tersedia bobot pada soal 
+ 

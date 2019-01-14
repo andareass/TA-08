@@ -1,0 +1,51 @@
+Praktikum 1, 12S16021,Soraya Maria Gultom 
+ 
+ 
+Laporan Praktikum 1  Uninformed Search 
+ 
+Latihan 1  
+Penenyelesaian untuk  
+ 
+ 	 
+ 
+Program code untuk DFS : 
+ 
+# -*- coding: utf-8 -*- 
+""" 
+Created on Wed Sep 26 07:53:34 2018 
+@author: ITD_Stu 
+""" nodes={1:set([2,3]), 
+      2:set([4,5]), 
+      3:set([6,7]), 
+      4:set([8,9]), 
+      5:set([10,11]), 
+      6:set([12,13]),       7:set([14,15])} def dfs (graph,root,goals): 
+    root=[[root]]     visited=set()     while root : 
+        length_of_path=len(root)-1         path=root.pop(length_of_path)         state=path[-1]         if state == goals: 
+            return path         elif state not in visited :             for branch in graph.get(state,[]): 
+                new_path=list(path)                 new_path.append(branch)                 root.append(new_path)                 visited.add(state)                 content=len (root)                 if content == 0 : 
+                    print("NOT FOUND ") print ("DFS dari 1 ke 11 : " )                     list(dfs(nodes,1,11))     print(list(dfs(nodes,1,11))) 
+print ("DFS dari 1 ke 14 : " )                     list(dfs(nodes,1,14))     print(list(dfs(nodes,1,14))) 
+ 
+Hasilnya adalah sebagai berikut : 
+ 
+  
+ 
+Program code nya adalah sebagai berikut : 
+ 
+# -*- coding: utf-8 -*- 
+""" 
+Created on Wed Sep 26 07:52:28 2018 
+@author: ITD_Stu 
+""" jalur={1:set([2,3]),       2:set([4,5]), 
+      3:set([6,7]), 
+      4:set([8,9]), 
+      5:set([10,11]), 
+      6:set([12,13]),       7:set([14,15])} def bfs(graf,start,goals): 
+   start = [[start]]    visited = set()     while start: 
+      peta = start.pop(0)       state = peta[-1]       if state == goals :               return peta       elif state not in visited :                   for branch in graf.get(state,[]):                       new_path = list(jalur)                       new_path.append(branch)                       start.append(new_path)                       visited.add(state) print ("BFS dari 1 ke 11 : " )                     list(bfs(jalur,1,11))     print(list(bfs(jalur,1,11))) print ("BFS dari 1 ke 14 : " )                     list(bfs(jalur,1,14))     print(list(bfs(jalur,1,14))) 
+ 
+Hasilnya adalah sebagai berikut : 
+  
+ 
+ 

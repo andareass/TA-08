@@ -1,0 +1,21 @@
+Praktikum 1 
+Nama : Kharisma Grace Tambunan 
+NIM : 12S16044 
+ 
+Uniformed search merupakan suatu teknik pencarian tanpa mengetahui domain knowledge. 
+Teknik-teknik dalam mencari uninformed search ada 3, yaitu: 
+1.	DFS (Depth First Search) 
+Merupakan metode yang mencari node berdasarkan kedalaman yang akan dilakukan pada semua child sebelum dilakukan pencarian ke node-node yang selevel. Dalam Praktikum ini yang diprint adalah (graph, 1, 11)  dan (graph, 1, 
+  
+ 
+  
+ 
+2.	BFS (Breath First Search) 
+Metode ini merupakan  metode yang akan mencek setiap level agar sampai pada goal state atau tujuan. Dalam praktikum ini, kita diperintahkan untuk menginplementasikan metode ini dengan memprint  (graph, 1, 11) : start dari node 1 dan goal state node 11, adapun outputnya yaitu:  
+  
+ 
+Dengan code program adalah berikut ini. 
+
+ 
+ 
+ 

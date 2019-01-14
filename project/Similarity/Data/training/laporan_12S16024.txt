@@ -1,0 +1,51 @@
+Laporan AI 
+1.Breadth First Search 
+a.Goal 11 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+b. Goal 14 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2. Depth First Search 
+a.	Goal 11 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+b.	Goal 14 
+  
+  
+ 

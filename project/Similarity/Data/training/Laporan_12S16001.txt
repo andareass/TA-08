@@ -1,0 +1,21 @@
+Praktikum  : 1 
+Nama  	: Hebry Yanisa Manihuruk 
+NIM  	: 12S16001 
+ 
+Tugas nomor 1 
+BFS (Breadth-First-Search) 
+  
+ 
+DFS (Depth-First-Search) 
+  
+UCS (Uniform Cost Search) 
+  
+ 
+Tugas nomor 2 
+BFS (Breadth-First-Search) 
+  
+ 
+ 
+ 
+DFS (Depth-First-Search) 
+  

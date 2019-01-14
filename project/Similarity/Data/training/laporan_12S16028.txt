@@ -1,0 +1,16 @@
+LAPORAN PRAKTIKUM 
+KECERDASAN BUATAN 
+ 
+Nama : Kaleb Lonari Simanungkalit 
+Nim 	: 12S16028 
+Kelas : 13SI1 
+ 
+a.	11 
+BFS
+  
+DFS 
+   
+b.	14 BFS 
+  
+DFS 
+  

@@ -1,0 +1,51 @@
+Praktikum 1 
+NIM  	: 	12S16053 
+Nama  	: 	Angelia Khaterin Sibarani 
+ 
+Tujuan : 
+Mahasiswa dapat mengimplementasikan dan membandingkan Depth-First Search (DFS), Breadth-First Search (BFS), dan Uniform Cost Search (UCS) secara programatik. 
+ 
+Pendahuluan : 
+Secara keseluruhan, pencarian graf dapat dibagi menjadi dua kategori yaitu uninformed search dan informed search. Uninformed search adalah teknik pencarian yang tidak menggunakan informasi sebelumnya (prior information) atau aturan (rules) untuk mengeliminasi jalur-jalur yang tidak diperlukan. 
+Teknik uninformed search tidak mempertimbangkan tujuan (goal). Teknik ini tidak benar-benar tahu kemana ia akan pergi sampai “tersandung” pada tujuan. Dalam informed search, kita menggunakan heuristic untuk membimbing pencarian. Sebagai contoh, pada setiap simpul, kita dapat mendefinisikan fungsi heuristic yang mengembalikan suatu score yang merepresentasi perkiraan path cost mulai dari simpul awal ke tujuan. Dengan mendefinisikan fungsi heuristiknya, kita menginformasikan teknik pencarian mengenai arah yang benar untuk mencapai tujuan. Ini akan memungkinkan algoritma untuk mengidentifikasi “tetangga” mana yang akan menuntun ke tujuan. 
+Perlu dipahami bahwa heuristic search tidak akan selalu menemukan solusi yang paling optimal karena kita tidak melakukan eksplorasi semua kemungkinan dan kita bergantung pada suatu heuristic. Akan tetapi, ada suatu jaminan bahwa teknik ini akan mendapatkan dan memberikan solusi yang baik dalam waktu yang reasonable, yang mana kita butuhkan dalam solusi praktikal. Dalam dunia nyata, kita membutuhkan solusi yang cepat dan efektif. Heuristic search  memberikan solusi yang efisien dengan tiba pada solusi yang memungkinkan dengan cepat. • Aima 
+  
+ 
+• Tqdm 
+  
+Source code untuk BFS : jalur={1:set([2,3]), 
+2:set([4,5]), 
+3:set([6,7]), 
+4:set([8,9]), 
+5:set([10,11]), 
+6:set([12,13]), 
+7:set([14,15])} 
+ 
+def bfs(graf,start,goals): start = [[start]] visited = set()  while start: peta = start.pop(0) state = peta[-1] if state == goals :            return peta       elif state not in visited :                   for branch in graf.get(state,[]):                       new_path = list(jalur)                       new_path.append(branch)                       start.append(new_path)                       visited.add(state) 
+print("Menggunakan metode BFS :") 
+print ("Node yang dilalui oleh 1 ke 11 : " )                     list(bfs(jalur,1,11))     print(list(bfs(jalur,1,11))) 
+ 
+print ("Node yang dilalui oleh 1 ke 14 : " )                     list(bfs(jalur,1,14))     print(list(bfs(jalur,1,14))) print ("") 
+ 
+Source code untuk DFS : 
+jalur={1:set([2,3]), 
+2:set([4,5]), 
+3:set([6,7]), 
+4:set([8,9]), 
+5:set([10,11]), 
+6:set([12,13]), 
+7:set([14,15])} def dfs (graf,start,goals): 
+    start=[[start]]     visited=set()     while start : 
+        length_of_path=len(start)-1         path=start.pop(length_of_path)         state=path[-1] 
+         
+        if state == goals:             return path         elif state not in visited :             for branch in graf.get(state,[]):                 new_path=list(path)                 new_path.append(branch)                 start.append(new_path) 
+                 
+                visited.add(state) 
+                 
+                content=len (start)                 if content == 0 : 
+                    print("Tidak ditemukan ") 
+print("Menggunakan metode DFS :") 
+print ("Node yang dilalui oleh 1 ke 11 : " )                     list(dfs(jalur,1,11))     
+print(list(dfs(jalur,1,11))) 
+ 
+print ("Node yang dilalui oleh 1 ke 14 : " )                     list(dfs(jalur,1,14))     print(list(dfs(jalur,1,14))) print ("") 

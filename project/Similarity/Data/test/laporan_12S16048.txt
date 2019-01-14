@@ -1,0 +1,17 @@
+Praktikum 1 
+NIM 	: 12S16048 
+Nama : Saut Ridho D. Pangaribuan 
+ 
+A.	Bagian BFS 
+Goal state 11 dan 14 
+  
+ 
+B.	Bagian DFS Goal state 11 dan 14 
+  
+ 
+ 
+ 
+C.	Bagian UCS 
+  
+ 
+  

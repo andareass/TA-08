@@ -1,0 +1,56 @@
+PRAKTIKUM 1 
+NIM 	 	: 12S16009 
+NAMA 	: RATNA KASMALA HUTAPEA 
+ 
+BFS 
+-Complete Yes (if b is finite)  
+-Time 1 +   +   2 +   3 +   +     =  (   d ) 
+-	Space  (   d ) 
+-	Optimal Yes (if cost = 1 per step).  
+-	Implementation:       : FIFO (Queue) 
+Bfs tugas 1 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+Bfs tugas 2 
+ 
+  
+DFS 
+-	Complete No: fails in infinite-depth spaces    complete in finite spaces  
+-	Time       : 1 +   +   2 +   3 +   +     =   (    ) 
+–Space   (????) linear space complexity 
+-	Optimal No 
+-	Implementation: fringe: LIFO (Stack) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DFS tugas 1 
+  
+ 
+DFS tugas 2 
+ 
+  
+ 
+UCS 
+ 
+-Complete Yes, if solution has a finite cost.  
+-	Time 
+•	Suppose     : cost of the optimal solution 
+•	Every action costs at least   (bound on the cost)  
+•	The effective depth is roughly    /  (how deep the cheapest solution could be). •        /  • 
+ -Space # of nodes with   = cost of optimal solution,        /   
+- Optimal Yes  
+-Implementation: fringe = queue ordered by path cost  ( ), lowest first = Heap! 
+ 
+UCS tugas 1 
+  
+ 

@@ -1,0 +1,33 @@
+Laporan Praktikum 1 
+ 
+Nama: Sartika Aritonang 
+NIM   : 12S16004 
+ 
+Pada praktikum  1 menggunakan materi Uniformed search,yaitu metode dimana teknik pencarian tanpa mengetahui domain knowledge seperti bobot dan informasi, sedangkan uninformed search adalah teknik pencarian dengan membutuhkan informasi atau domain knowledge.  
+Teknik teknik dalam pencarian uninformed search ada 3 yaitu:  
+1.	DFS (Depth First Search)  
+DFS (Depth First Search) adalah metode yang akan mencari node berdasarkan kedalaman atau  pencarian akan dilakukan pada semua anaknya sebelum dilakukan pencarian ke node-node yang selevel. Pencarian dimulai dari node akar ke level yang lebih tinggi.  
+  
+Hasil program diatas mempunyai  code sebagai berikut:
+  
+ 
+2.	BFS (Breath First Search)  
+BFS (Breath First Search),yaitu metode yang akan mencek setiap level agar sampai pada goal state atau tujuan. BFS akan melakukan pencarian setiap simpul dalam setiap level secara berurutan dari kiri ke kanan, BFS akan terus mencek perlevel sampai menemukan solusi dari pencaraian. BFS bagus apabila dilihat dari sisi completeness dan optimality .  
+  
+ 
+ 
+ 
+ 
+ 
+Dengan code program adalah berikut ini.  
+     
+   
+  
+ 
+ 
+3.	UCS (Uniform Cost Search)  
+UCS (Uniform Cost Search) merupakan metode yang memperhatikan cost ataupun jarak dari node 1 ke node yang lain, UCS akan telebih dahulu mengeksplorasi node yang memiliki cost lebih rendah. Code program dari UCS yang saya buat dalam praktikum ini yaitu:   
+Codenya terbagi atas 3 yaitu main,priority dan graph 
+    
+  
+ 

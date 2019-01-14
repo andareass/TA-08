@@ -1,0 +1,186 @@
+Praktikum 1 
+12S16052 
+Adventina D Siahaan 
+ 
+1.	Latihan 1
+  
+Python 3 telah diinstal. 
+2.	Latihan 2 
+Aima Python telah diinstal. 
+ 
+Source Code  	: 
+romania_map = {"Arad": set ( ["Zerind", "Sibiu", "Timisoara"]), 
+         "Sibiu": set (["Faragas", "Rimnicu", "Oradeo"]), 
+         "Zerind": set (["Oradeo"]), 
+         "Oradeo": set ([]), 
+         "Timisoara": set (["Lugoj"]), 
+         "Lugoj": set (["Mehadia"]), 
+         "Mehadia": set (["Drobeta"]), 
+         "Drobeta" : set (["Craiova"]), 
+         "Rimnicu": set (["Craiova", "Pitesti"]), 
+         "Craiova": set ( ["Pitesti"]), 
+         "Faragas" : set (["Bucharest"]), 
+         "Pitesti" : set (["Bucharest"]), 
+         "Bucharest" : set (["Urziceni", "Giurgiu"]), 
+         "Urziceni" : set (["Hirsova", "Vaslui"]), 
+         "Giurgiu" : set ([]), 
+         "Hirsova" : set (["Eforie"]), 
+         "Eforie" : set([]), 
+         "Vaslui" : set (["Iasi"]), 
+         "Iasi" : set (["Neamt"]), 
+         "Neamt" : set([]) 
+         } 
+def bfs_paths(romania_map, start, finish): 
+    queue = [(start, [start])]     while queue: 
+        (vertex, path) = queue.pop(0)         for next in romania_map[vertex] - set(path):             if next == finish: 
+                yield path + [next]             else: 
+                queue.append((next, path + [next])) 
+ 
+list(bfs_paths(romania_map, "Arad", "Bucharest"))  print("Jalur yang dilalui BFS adalah : ",list(bfs_paths(romania_map, "Arad", 
+"Bucharest")) ) 
+Output  	: 
+  
+5. Latihan 5 | BFS Implementation Source Code 	: 
+romania_map = {"Arad": set ( ["Zerind", "Sibiu", "Timisoara"]), 
+         "Sibiu": set (["Faragas", "Rimnicu", "Oradeo"]), 
+         "Zerind": set (["Oradeo"]), 
+         "Oradeo": set ([]), 
+         "Timisoara": set (["Lugoj"]), 
+         "Lugoj": set (["Mehadia"]), 
+         "Mehadia": set (["Drobeta"]), 
+         "Drobeta" : set (["Craiova"]), 
+         "Rimnicu": set (["Craiova", "Pitesti"]), 
+         "Craiova": set ( ["Pitesti"]), 
+         "Faragas" : set (["Bucharest"]), 
+         "Pitesti" : set (["Bucharest"]), 
+         "Bucharest" : set (["Urziceni", "Giurgiu"]), 
+         "Urziceni" : set (["Hirsova", "Vaslui"]), 
+         "Giurgiu" : set ([]), 
+         "Hirsova" : set (["Eforie"]), 
+         "Eforie" : set([]), 
+         "Vaslui" : set (["Iasi"]), 
+         "Iasi" : set (["Neamt"]), 
+         "Neamt" : set([]) 
+         } 
+def dfs_paths(romania_map, start, finish):     stack = [(start, [start])]     while stack: 
+        (vertex, path) = stack.pop()         for next in romania_map[vertex] - set(path):             if next == finish: 
+                yield path + [next]             else: 
+                stack.append((next, path + [next])) 
+ 
+list(dfs_paths(romania_map, "Arad", "Bucharest")) print ("Jalur yang dilalui DFS adalah : ",list(dfs_paths(romania_map, "Arad", 
+"Bucharest"))) 
+Output  	: 
+  
+6. Latihan 6 | UCS Implementation Source Code 	: import queue as Q 
+ 
+def search(graph, start, end):     if start not in graph: 
+        raise TypeError(str(start) + ' not found in graph !')         return     if end not in graph: 
+        raise TypeError(str(end) + ' not found in graph !')         return 
+     
+    queue = Q.PriorityQueue()     queue.put((0, [start])) 
+     
+    while not queue.empty():         node = queue.get() 
+        current = node[1][len(node[1]) - 1] 
+         
+        if end in node[1]: 
+            print("Path found: " + str(node[1]) + ", Cost = " + str(node[0]))             break 
+         
+        cost = node[0]         for neighbor in graph[current]:             temp = node[1][:]             temp.append(neighbor)             queue.put((cost + graph[current][neighbor], temp)) 
+         
+def readGraph(): 
+    lines = int( input() )     graph = {} 
+     
+    for line in range(lines): 
+        line = input() 
+             
+        tokens = line.split()         node = tokens[0]         graph[node] = {} 
+         
+        for i in range(1, len(tokens) - 1, 2): 
+            # print(node, tokens[i], tokens[i + 1]) 
+            # graph.addEdge(node, tokens[i], int(tokens[i + 1]))             graph[node][tokens[i]] = int(tokens[i + 1])     return graph 
+ 
+def main(): 
+    graph = readGraph()     search(graph, 'Arad', 'Bucharest') 
+     
+if __name__ == "__main__": 
+    main() 
+     
+"""  romania_Map={"Arad": set (["75",  "118", "140"]), 
+"Zerind"= set(["71",  "75"]), 
+Timisoara Arad 118 Lugoj 111 
+Sibiu Arad 140 Oradea 151 Fagaras 99 RimnicuVilcea 80 
+Oradea Zerind 71 Sibiu 151 
+Lugoj Timisoara 111 Mehadia 70 
+RimnicuVilcea Sibiu 80 Pitesti 97 Craiova 146 
+Mehadia Lugoj 70 Dobreta 75 
+Craiova Dobreta 120 RimnicuVilcea 146 Pitesti 138 
+Pitesti RimnicuVilcea 97 Craiova 138 Bucharest 101 
+Fagaras Sibiu 99 Bucharest 211 
+Dobreta Mehadia 75 Craiova 120 
+Bucharest Fagaras 211 Pitesti 101 Giurgiu 90 
+Giurgiu Bucharest 90 
+""" 
+ 
+print(search(graph,'Arad','Bucharest')) 
+ 
+Output  	: 
+ 
+  
+ 
+Tugas 2 
+  
+ 	
+1. 	Dengan BFS : 
+jalur={1:set([2,3]), 
+      2:set([4,5]), 
+      3:set([6,7]), 
+      4:set([8,9]), 
+      5:set([10,11]), 
+      6:set([12,13]), 
+      7:set([14,15])} 
+ 
+def bfs(graf,start,finish): 
+    	start = [[start]] 
+   visited = set()     while start:       	 peta = start.pop(0) 
+      state = peta[-1]       if state == finish :               return peta       elif state not in visited :                   for branch in graf.get(state,[]):                       new_path = list(jalur)                       new_path.append(branch)                       start.append(new_path)                       visited.add(state) 
+print("Dengan BFS :") 
+print ("Simpul yang dilalui oleh 1 ke 11 : " )                     list(bfs(jalur,1,11))     print(list(bfs(jalur,1,11))) print ("Simpul yang dilalui oleh 1 ke 14 : " )                     list(bfs(jalur,1,14))     print(list(bfs(jalur,1,14))) print ("") 
+ 
+Out out : 
+  
+2. Dengan DFS 
+jalur={1:set([2,3]),       2:set([4,5]), 
+      3:set([6,7]), 
+      4:set([8,9]), 
+      5:set([10,11]), 
+      6:set([12,13]), 
+      7:set([14,15])} 
+ 
+def dfs (graf,start,finish): 
+    start=[[start]]     visited=set() 
+     
+    while start : 
+        length_of_path=len(start)-1         path=start.pop(length_of_path)         state=path[-1] 
+         
+        if state == finish:             return path         elif state not in visited :             for branch in graf.get(state,[]):                 new_path=list(path)                 new_path.append(branch)                 start.append(new_path) 
+                 
+                visited.add(state) 
+                 
+                content=len (start)                 if content == 0 : 
+                    print("Tidak ditemukan ") print("Menggunakan metode DFS :") 
+print ("Node yang dilalui oleh 1 ke 11 : " )                     list(dfs(jalur,1,11))     print(list(dfs(jalur,1,11))) 
+ 
+ 
+print ("Node yang dilalui oleh 1 ke 14 : " )                     list(dfs(jalur,1,14))     print(list(dfs(jalur,1,14))) print ("") 
+ 
+Output : 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

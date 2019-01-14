@@ -1,0 +1,24 @@
+Praktikum  : 1 
+Nama  	: Angelina Iglesia Purba 
+NIM  	: 12S16010 
+ 
+Kriteria 	BFS 	DFS 	UCS 
+Complete 	Yes 	No 	Yes, Jika solusi mempunyai finite 
+ 
+Time 	O(bd) 	O(bm) 	
+Space 	O(bd) 
+Jika goal test lebih luas daripada O(bd+1) 	O(bm) 	g = cost O(bC*/€) 
+Optimal 	Yes 
+Jika cost = 1 per step 	No 	Yes 
+Implementasi 	O(bd) FIFO (Queue) 	LIFO (Stack) 	Heap 
+ 
+Tugas nomor 1 
+BFS (Breadth-First-Search) 
+  
+DFS (Depth-First-Search) 
+  
+Tugas nomor 2 
+BFS (Breadth-First-Search) 
+  
+DFS (Depth-First-Search) 
+  

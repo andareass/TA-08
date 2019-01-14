@@ -1,0 +1,52 @@
+1.	BFS(Breadth-firsy Search)  adalah metode yang mencek setiap level agar sampai kepada goal state atau tujuan. Pada BFS melakukan pebarian terhdap setiap simpul dalam setiap level secara berurutan dari kiri ke kanan, dan BFS akan selalu mencek perlevel sampai menemukan solusi pecarian.BFS akan kelihatan bagus apa bila di lihat dari sisi completeness  dan optimality. 
+Dalam praktikum ini, kita diperintahkan untuk menginplementasikan metode ini dengan memprint  (graph, 1, 11) : start dari node 1 dan goal state node 11, Dan juga diperintahkan untuk menginplementasikan metode ini dengan memprint  (graph, 1, 14) : start dari node 1 dan goal state node 14, 
+ 
+Dengan code sebagai berikut 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Outputnya :  
+ 	 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.	DFS( Depth First Search) adalah metode yang mecari node berdasarkan kedalaman. Pecaraian akan dilakukan pada semua anaknya sebelumnya akan dilakuakn pecarian node-node selevel. Pecarian dimulai dari node akar ke lvel yang lebih tinggi. Dalam praktikum ini, kita diperintahkan untuk menginplementasikan metode ini dengan memprint  (graph, 1, 11) : start dari node 1 dan goal state node 11, 
+Dan juga diperintahkan untuk menginplementasikan metode ini dengan memprint  (graph, 1, 14) : start dari node 1 dan goal state node 14, Dengan code : 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Outputnya:  
+ 
+ 	 
+ 
+3.	UCS (Uniform Cost Search) adalah modifikasi tetapi memperhitungkan nilai yang paling kecil 
+ 
+
+ 
+
+ 

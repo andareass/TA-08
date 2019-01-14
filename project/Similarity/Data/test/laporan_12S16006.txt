@@ -1,0 +1,35 @@
+Praktikum : 1 
+Nama : Natasya Y Nababan 
+Nim : 12S16006 
+Tugas 1 
+1.	BFS 
+Meode BFS merupakan method menchek setiap level agar  sampai pada tujuan (goal state), yang pencariannya dilakukan secara beururutan pada tiap level dari kiri ke kanan. BFD 
+ 
+ 
+2.	DFS 
+Meruakan method yang mencari node berdasarkan  kedalaman yang dilakukan pada semua anaknya sebelum dilakukan pencarian pada node yang selevel 
+  
+ 
+ 	 
+ 
+ 	 
+ 
+3.	UCS 
+UCS merupakan method  yang melihat cost berdasarkan jarak yang paling singkat , ataupun node yang memiliki jumlah atau biaya yang paling murah. 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

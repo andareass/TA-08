@@ -1,0 +1,15 @@
+Praktikum 1 
+12s16059 
+Puteri Grace 
+1.	Tugas 2 BFS (Breadth First Search) 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.	Tugas 2 DFS (Depth Fisrt Search) 
+  

@@ -1,0 +1,23 @@
+LAPORAN PRAKTIKUM 
+KECERDASAN BUATAN 
+ 
+Nama : Fransiska Yuliyanti Siburian 
+NIM : 12S16045 Kelas : 13SI-2 
+ 
+ 
+1.	Romania Map 
+Source code  dan output: 
+  
+ 
+  
+ 
+ 
+2.	BFS, DFS, dan UCS  
+  
+ 
+Source code dan output: 
+  
+ 
+  
+ 
+ 

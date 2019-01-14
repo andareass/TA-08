@@ -1,0 +1,130 @@
+ 
+Praktikum1 
+12S16015 
+Ari Whuandnaiel MAnurung 
+ 
+ 
+Latihan 1 || Instalasi Python 
+  
+Latihan 2 || Instalasi Paket: AIMA python 
+  
+Latihan 3 || Romania Map 
+  
+Tugas Praktikum 
+  
+Soal 1 
+1.	bfs_12S16015.py 
+   
+2.	dfs_12S16015.py 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.	ucs_12S16015.py
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Soal 2 
+1.	bfs_12S16015.py 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.	dfs_12S16015.py
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.	ucs_12S16015.py
+a.	graph.py 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+b.	main.py
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+c.	priority_queue.py 
+  
+ 
